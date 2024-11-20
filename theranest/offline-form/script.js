@@ -1,4 +1,3 @@
-console.log('start of script')
 const form = document.getElementById("form");
 const formFields = form.querySelectorAll("input, select, textarea");
 const submitButton = document.querySelector("button[type='submit']");
@@ -8,23 +7,29 @@ const url = new URL(window.location.href);
 const userName = url.searchParams.get("name")
 const userEmail = url.searchParams.get("email")
 const userPhone = url.searchParams.get("phone")
+const product = url.searchParams.get("product")
+// console.log(`${userEmail} ${userEmail} ${userPhone}`)
 
 const nameField = document.getElementById("name");
 const emailField = document.getElementById("email");
 const phoneField = document.getElementById("phone");
-console.log(`${userEmail} ${userEmail} ${userPhone}`)
+const productField = document.getElementById("product")
 
 if (userName) {
-    document.getElementById("name").value = userName;
+    nameField.value = userName;
     nameField.disabled = true
 }
 if (userEmail) {
-    document.getElementById('email').value = userEmail
+    emailField.value = userEmail
     emailField.disabled = true
 }
 if (userPhone) {
-    document.getElementById('phone').value = userPhone
+    phoneField.value = userPhone
     phoneField.disabled = true
+}
+if(product) {
+    productField.value = product
+    productField.disabled = true
 }
 
 document.getElementById("form").addEventListener("submit", function (event) {

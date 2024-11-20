@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="form">
+            <label for="first-name" class="required">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name" class="required">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email" class="required">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- <label for="organization" class="required">Organization Name</label>
+            <input type="text" id="organization" name="organization" required> -->
+
+            <label for="product" class="required">Product</label>
+            <select id="product" name="product" required>
+                <option label="AccuPoint Legacy" value="AccuPoint Legacy">AccuPoint Legacy</option>
+                <option label="Apex" value="Apex">Apex</option>
+                <option label="Catalyst" value="Catalyst">Catalyst</option>
+                <option label="Clinician's Desktop" value="CDT">Clinician's Desktop</option>
+                <option label="EchoVantage" value="EchoVantage">EchoVantage</option>
+                <option label="Fusion" value="Fusion">Fusion</option>
+                <option label="Fusion Enterprise/A2C" value="Fusion Enterprise/A2C">Fusion Enterprise/A2C</option>
+                <option label="Insyst" value="Insyst">Insyst</option>
+                <option label="KASA" value="KASA">KASA</option>
+                <option label="Logik" value="Logik">Logik</option>
+                <option label="My Clients Plus" value="My_Clients_Plus">My Clients Plus</option>
+                <option label="MyClientsPlus 3.0/TheraNest Lite" value="TheraNest Lite">MyClientsPlus 3.0/TheraNest Lite</option>
+                <option label="NewCrop" value="NewCrop">NewCrop</option>
+                <option label="Procentive" value="Procentive">Procentive</option>
+                <option label="RevMan" value="RevMan">RevMan</option>
+                <option label="ShareCare" value="ShareCare">ShareCare</option>
+                <option label="ShareNote" value="ShareNote">ShareNote</option>
+                <option label="TenEleven" value="TenEleven">TenEleven</option>
+                <option label="Thera-LINK" value="Thera-LINK">Thera-LINK</option>
+                <option label="TheraNest Professional" value="TheraNest Professional" selected>TheraNest Professional</option>
+                <option label="WebABA Enterprise/CodeMetro" value="WebABA Enterprise">WebABA Enterprise/CodeMetro</option>
+                <option label="WebABA Pro &amp; Group" value="WebABA Pro &amp; Group">WebABA Pro &amp; Group</option>
+                <option label="WebABA Legacy" value="WebABA Legacy">WebABA Legacy</option>
+            </select>
+
+            <label for="business" class="required">Business Impact</label>
+            <select id="business" name="business" required>
+                <option label="I have a question about my product" value="I have a question about my product">I have a question about my product</option>
+                <option label="There is an item causing some minor annoyances (everyone can still work)" value="There is an item causing some minor annoyances (everyone can still work)">There is an item causing some minor annoyances (everyone can still work)</option>
+                <option label="Part of the system is not functioning (some people cannot work)" value="Part of the system is not functioning (some people cannot work)">Part of the system is not functioning (some people cannot work)</option>
+                <option label="Entire system is down (no one can work)" value="Entire system is down (no one can work)">Entire system is down (no one can work)</option>
+            </select>
+
+            <label for="subject" class="required">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="description" class="required">Brief Description</label>
+            <input type="text" id="description" name="description" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
