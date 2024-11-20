@@ -1,3 +1,4 @@
+console.log('start of script')
 const form = document.getElementById("form");
 const formFields = form.querySelectorAll("input, select, textarea");
 const submitButton = document.querySelector("button[type='submit']");
@@ -11,6 +12,7 @@ const userPhone = url.searchParams.get("phone")
 const nameField = document.getElementById("name");
 const emailField = document.getElementById("email");
 const phoneField = document.getElementById("phone");
+console.log(`${userEmail} ${userEmail} ${userPhone}`)
 
 if (userName) {
     document.getElementById("name").value = userName;
