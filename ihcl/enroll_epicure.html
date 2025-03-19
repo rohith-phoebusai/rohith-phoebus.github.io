@@ -232,10 +232,12 @@
             const state = document.getElementById('state').value;
             const pincode = document.getElementById('pincode').value;
             const country = document.getElementById('country').value;
-
+            const gender = salutation === 'Mr.' ? 'Male' : 'Female'
+            
             const data = {
                 salutation,
                 dob,
+                gender,
                 address1,
                 address2,
                 city,
@@ -259,7 +261,7 @@
                 field.disabled = true;
             });
             submitButton.disabled = true;
-            // alert(`${salutation}, ${dob}, ${address1}, ${address2}, ${city}, ${state}, ${pincode}, ${country}`);
+            // alert(`${salutation}, ${dob}, ${gender}, ${address1}, ${address2}, ${city}, ${state}, ${pincode}, ${country}`);
         });
 
         // Function to validate pincode and fetch address if valid
