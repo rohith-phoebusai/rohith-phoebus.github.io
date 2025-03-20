@@ -288,6 +288,7 @@
             const state = document.getElementById('state').value;
             const pincode = document.getElementById('pincode').value;
             const country = document.getElementById('country').value;
+            const gender = salutation === 'Mr.' ? 'Male' : 'Female';
 
             const data = {
                 salutation,
@@ -295,6 +296,7 @@
                 lastName,
                 email,
                 dob,
+                gender,
                 address1,
                 address2,
                 city,
